@@ -6,7 +6,11 @@
 #define CHESS_ROOK_H
 #include "Piece.h"
 
-class Rook :Piece{
+class Rook : public Piece{
+public:
+    Rook(Tile *tile, Team team);
+
+private:
     bool isValidMove(Tile *destination) override;
 
 };

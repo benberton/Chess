@@ -8,7 +8,7 @@ bool Rook::isValidMove(Tile *destination) {
     if(destination->getX() == tile->getX() or destination->getY() ==tile->getY())
     {
         Piece* otherPiece = destination->getPiece();
-        if(otherPiece != nullptr)
+        if(destination->hasPiece())
         {
             if(otherPiece->getTeam() == getTeam())
             {
@@ -59,10 +59,14 @@ bool Rook::isValidMove(Tile *destination) {
             }
 
         }
-
+        return true;
 
 
     }
     return false;
+}
+
+Rook::Rook(Tile *tile, Team team) : Piece(tile, team) {
+    symbol = 'R';
 }
 

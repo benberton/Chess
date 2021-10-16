@@ -47,9 +47,12 @@ Board::Board(int width) {
     {
         for(int j = 0; j < width; ++j)
         {
+
             tiles[i][j] = new Tile(i, j);
+
         }
     }
+
 }
 
 char Board::intToChar(int val) {

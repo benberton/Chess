@@ -56,5 +56,6 @@ CMakeFiles/Chess.dir/main.cpp.o
  /Users/nathanmautz/Documents/Chess/Board.h
  /Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
  /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+ /Users/nathanmautz/Documents/Chess/Pieces/Rook.h
  /Users/nathanmautz/Documents/Chess/Tile.h
  /Users/nathanmautz/Documents/Chess/main.cpp

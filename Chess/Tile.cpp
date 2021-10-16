@@ -33,3 +33,10 @@ char Tile::getSymbol() {
 bool Tile::hasPiece() {
     return piece != nullptr;
 }
+
+Tile::Tile(int x, int y) {
+    this->x = x;
+    this->y = y;
+    piece = nullptr;
+
+}

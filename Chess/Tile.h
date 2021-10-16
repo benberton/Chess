@@ -11,7 +11,7 @@ class Piece;
 class Tile {
 
 public:
-    Tile(int x, int y) : x(x), y(y) {}
+    Tile(int x, int y) ;
 
     int getX();
     int getY();

@@ -1,16 +1,17 @@
 #include <iostream>
 #include "Board.h"
 #include "Pieces/Pawn.h"
+#include "Pieces/Rook.h"
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
 
     Board* board = Board::getInstance();
-    Piece* pawn = new Pawn(board->getTile(0,0), white);
-    Piece* pawn2 = new Pawn(board->getTile(1,1), white);
-
+    Piece* rook = new Rook(board->getTile(0,0), white);
+   // Piece* rook2 = new Rook(git)
     std::cout << board->toString() << std::endl;
-    pawn->move(board->getTile(1,1));
+    rook->move(board->getTile(0,7));
     std::cout << board->toString() << std::endl;
 
 
