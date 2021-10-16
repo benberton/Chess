@@ -9,7 +9,3 @@ bool Knight::isValidMove(Tile destination) {
     return false;
 }
 
-bool Knight::move(Tile destination) {
-    //TODO
-    return false;
-}

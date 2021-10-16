@@ -4,7 +4,7 @@
 
 #ifndef CHESS_PIECE_H
 #define CHESS_PIECE_H
-#include "Tile.h"
+#include "../Tile.h"
 
 class Tile;
 
@@ -24,7 +24,7 @@ public:
 
 
     virtual bool isValidMove(Tile destination) = 0;
-    virtual bool move(Tile destination) = 0;
+    bool move(Tile destination);
 
 
 

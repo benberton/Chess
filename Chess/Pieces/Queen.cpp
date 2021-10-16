@@ -9,7 +9,3 @@ bool Queen::isValidMove(Tile destination) {
     return false;
 }
 
-bool Queen::move(Tile destination) {
-    //TODO
-    return false;
-}

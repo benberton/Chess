@@ -7,13 +7,11 @@
 
 
 #include "Piece.h"
-#include "Board.h"
+#include "../Board.h"
 
 class Pawn : Piece{
 
     bool isValidMove(Tile destination) override;
-
-    bool move(Tile destination) override;
 
 
 };

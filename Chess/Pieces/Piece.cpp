@@ -27,3 +27,8 @@ Piece::~Piece() {
 Team Piece::getTeam() {
     return team;
 }
+
+bool Piece::move(Tile destination) {
+    //TODO
+    return false;
+}

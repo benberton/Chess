@@ -9,7 +9,3 @@ bool Rook::isValidMove(Tile destination) {
     return false;
 }
 
-bool Rook::move(Tile destination) {
-    //TODO
-    return false;
-}

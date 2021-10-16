@@ -34,7 +34,3 @@ bool Pawn::isValidMove(Tile destination) {
     return false;
 }
 
-bool Pawn::move(Tile destination) {
-    //TODO
-    return false;
-}

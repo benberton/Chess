@@ -9,7 +9,6 @@
 class Knight :Piece{
     bool isValidMove(Tile destination) override;
 
-    bool move(Tile destination) override;
 };
 
 

@@ -9,7 +9,3 @@ bool King::isValidMove(Tile destination) {
     return false;
 }
 
-bool King::move(Tile destination) {
-    //TODO
-    return false;
-}

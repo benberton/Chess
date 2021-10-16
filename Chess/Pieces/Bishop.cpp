@@ -9,7 +9,3 @@ bool Bishop::isValidMove(Tile destination) {
     return false;
 }
 
-bool Bishop::move(Tile destination) {
-    //TODO
-    return false;
-}
