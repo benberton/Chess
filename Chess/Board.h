@@ -18,6 +18,8 @@ public:
 private:
     Tile*** tiles{};
     int width;
+    //Helper function for toString
+    char intToChar(int val);
 
 
 };
