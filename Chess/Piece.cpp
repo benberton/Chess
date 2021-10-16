@@ -4,14 +4,12 @@
 #include "Piece.h"
 
 void Piece::takePiece(Piece *otherPiece) {
-    otherPiece->death();
+    delete otherPiece;
 }
 
 void Piece::death() {
-    //TODO
-    //tile->setPiece();
-
-
+    tile->setPiece(nullptr);
+    tile = nullptr;
 }
 
 Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
@@ -20,4 +18,8 @@ Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
 
 char Piece::getSymbol() {
     return symbol;
+}
+
+Piece::~Piece() {
+    death();
 }

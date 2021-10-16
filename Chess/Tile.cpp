@@ -4,22 +4,19 @@
 
 #include "Tile.h"
 int Tile::getX() {
-    //TODO
-    return 0;
+    return x;
 }
 
 int Tile::getY() {
-    //TODO
-    return 0;
+    return y;
 }
 
 Piece *Tile::getPiece() {
-    //TODO
-    return nullptr;
+    return piece;
 }
 
 void Tile::setPiece(Piece *piece) {
-    //TODO
+    this->piece = piece;
 
 }
 

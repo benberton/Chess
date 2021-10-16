@@ -16,7 +16,7 @@ public:
 
 
     Piece(Tile *tile, Team team);
-
+    virtual ~Piece();
     void takePiece(Piece *otherPiece);
     void death();
     char getSymbol();
