@@ -5,17 +5,30 @@
 
 std::string Board::toString() {
     //TODO
+    static int rowNum = 8;
+    char piece = 'o';
     std::string str = "";
-    for(int i = 0; i < width; ++i)
-    {
-        for(int j = 0; j < width; ++j)
-        {
-            str += getTile(i, j)->getSymbol();
 
+    str += "        A       B       C       D       E       F       G       H\n";
+    str += "    _________________________________________________________________\n";
+
+    for (int i = 8; i > 0; i--)
+    {
+        str += "    |       |       |       |       |       |       |       |       |\n";
+
+        str += intToChar(rowNum);
+        rowNum--;
+
+        for (int j = 0; j < 8; ++j) {
+            str += "   |   ";
+            str += piece ;
         }
+        str += "   |";
+        str += "\n    |_______|_______|_______|_______|_______|_______|_______|_______|\n";
     }
 
-    return str;
+
+
 }
 
 Tile* Board::getTile(int x, int y) {
