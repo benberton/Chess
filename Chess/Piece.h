@@ -20,6 +20,7 @@ public:
     void takePiece(Piece *otherPiece);
     void death();
     char getSymbol();
+    Team getTeam();
 
 
     virtual bool isValidMove(Tile destination) = 0;
@@ -27,7 +28,7 @@ public:
 
 
 
-private:
+protected:
     char symbol;
     Tile* tile;
     Team team;

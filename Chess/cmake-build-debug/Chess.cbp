@@ -86,6 +86,12 @@
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.h">
 			<Option target="Chess"/>
 		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Pawn.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Pawn.h">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Piece.cpp">
 			<Option target="Chess"/>
 		</Unit>

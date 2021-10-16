@@ -23,3 +23,7 @@ char Piece::getSymbol() {
 Piece::~Piece() {
     death();
 }
+
+Team Piece::getTeam() {
+    return team;
+}

@@ -153,6 +153,30 @@ Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+Pawn.o: Pawn.cpp.o
+.PHONY : Pawn.o
+
+# target to build an object file
+Pawn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Pawn.cpp.o
+.PHONY : Pawn.cpp.o
+
+Pawn.i: Pawn.cpp.i
+.PHONY : Pawn.i
+
+# target to preprocess a source file
+Pawn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Pawn.cpp.i
+.PHONY : Pawn.cpp.i
+
+Pawn.s: Pawn.cpp.s
+.PHONY : Pawn.s
+
+# target to generate assembly for a file
+Pawn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Pawn.cpp.s
+.PHONY : Pawn.cpp.s
+
 Piece.o: Piece.cpp.o
 .PHONY : Piece.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... Board.o"
 	@echo "... Board.i"
 	@echo "... Board.s"
+	@echo "... Pawn.o"
+	@echo "... Pawn.i"
+	@echo "... Pawn.s"
 	@echo "... Piece.o"
 	@echo "... Piece.i"
 	@echo "... Piece.s"
