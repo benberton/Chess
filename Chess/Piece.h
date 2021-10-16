@@ -4,6 +4,9 @@
 
 #ifndef CHESS_PIECE_H
 #define CHESS_PIECE_H
+#include "Tile.h"
+
+class Tile;
 
 enum Team{white, black};
 
@@ -11,32 +14,42 @@ class Piece {
 
 public:
 
-    Piece(const Tile &tile, Team team) : tile(tile), team(team) {
 
-    }
+    Piece(Tile *tile, Team team);
 
-    void takePiece();
+    void takePiece(Piece *otherPiece);
     void death();
+    char getSymbol();
 
 
-
-    virtual isValidMove(Tile destinaton) = 0;
-    virtual move(Tile destination) = 0;
+    virtual bool isValidMove(Tile destination) = 0;
+    virtual bool move(Tile destination) = 0;
 
 
 
 private:
-    const char symbol;
+    char symbol;
     Tile* tile;
     Team team;
 };
 
-void Piece::takePiece() {
-    //TODO
+void Piece::takePiece(Piece *otherPiece) {
+    otherPiece->death();
 }
 
 void Piece::death() {
     //TODO
+    tile->setPiece()
+
+
+}
+
+Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
+    symbol = 'G';
+}
+
+char Piece::getSymbol() {
+    return symbol;
 }
 
 

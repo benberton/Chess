@@ -5,6 +5,8 @@
 #ifndef CHESS_TILE_H
 #define CHESS_TILE_H
 
+#include "Piece.h"
+class Piece;
 
 class Tile {
 
@@ -18,6 +20,7 @@ public:
     void setPiece(Piece* piece);
 
 
+    char getSymbol();
 
 private:
     int x;
@@ -44,6 +47,16 @@ Piece *Tile::getPiece() {
 void Tile::setPiece(Piece *piece) {
     //TODO
 
+}
+
+char Tile::getSymbol() {
+    if(piece == nullptr)
+    {
+        return 'O';
+    }else
+    {
+        return piece->getSymbol();
+    }
 }
 
 
