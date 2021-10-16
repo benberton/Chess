@@ -5,6 +5,7 @@
 #ifndef CHESS_PIECE_H
 #define CHESS_PIECE_H
 #include "../Tile.h"
+#include "../Board.h"
 
 class Tile;
 

@@ -7,8 +7,9 @@ int main() {
 
     Board* board = Board::getInstance();
     Piece* pawn = new Pawn(board->getTile(0,0), white);
-    board->getTile(0,0)->setPiece(pawn);
-   // std::cout << board->toString() << std::endl;
+    Piece* pawn2 = new Pawn(board->getTile(1,1), black);
+
+    std::cout << board->toString() << std::endl;
     pawn->move(board->getTile(1,1));
     std::cout << board->toString() << std::endl;
 

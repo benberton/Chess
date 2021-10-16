@@ -17,6 +17,9 @@ void Piece::death() {
 
 Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
     symbol = 'G';
+    Board* board = Board::getInstance();
+    board->getTile(tile->getX(), tile->getY())->setPiece(this);
+
 }
 
 char Piece::getSymbol() {

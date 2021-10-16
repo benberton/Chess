@@ -12,10 +12,6 @@ iostream
 Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 
-/Users/nathanmautz/Documents/Chess/Pieces/Pawn.cpp
-Pawn.h
-/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
-
 /Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
 Piece.h
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
@@ -29,4 +25,12 @@ Piece.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 Pieces/Piece.h
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/main.cpp
+iostream
+-
+Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+Pieces/Pawn.h
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
 
