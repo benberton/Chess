@@ -21,13 +21,13 @@ std::string Board::toString() {
 
         for (int j = 0; j < 8; ++j) {
             str += "   |   ";
-            str += piece ;
+            str += getTile(i-1,j)->getSymbol() ;
         }
         str += "   |";
         str += "\n    |_______|_______|_______|_______|_______|_______|_______|_______|\n";
     }
 
-
+    return str;
 
 }
 
