@@ -9,7 +9,11 @@
 #include "Piece.h"
 #include "../Board.h"
 
-class Pawn : Piece{
+class Pawn : public Piece{
+public:
+    Pawn(Tile *tile, Team team);
+
+private:
 
     bool isValidMove(Tile *destination) override;
 };

@@ -21,7 +21,7 @@ std::string Board::toString() {
 
         for (int j = 0; j < 8; ++j) {
             str += "   |   ";
-            str += getTile(i-1,j)->getSymbol() ;
+            str += getTile(j,i-1)->getSymbol() ;
         }
         str += "   |";
         str += "\n    |_______|_______|_______|_______|_______|_______|_______|_______|\n";
