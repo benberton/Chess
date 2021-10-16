@@ -7,6 +7,7 @@
 #include "../Tile.h"
 #include "../Board.h"
 
+
 class Tile;
 
 enum Team{white, black};

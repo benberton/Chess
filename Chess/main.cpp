@@ -7,7 +7,7 @@ int main() {
 
     Board* board = Board::getInstance();
     Piece* pawn = new Pawn(board->getTile(0,0), white);
-    Piece* pawn2 = new Pawn(board->getTile(1,1), black);
+    Piece* pawn2 = new Pawn(board->getTile(1,1), white);
 
     std::cout << board->toString() << std::endl;
     pawn->move(board->getTile(1,1));

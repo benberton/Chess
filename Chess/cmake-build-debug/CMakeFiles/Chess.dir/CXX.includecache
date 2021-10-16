@@ -21,6 +21,8 @@ Piece.h
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 ../Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
+../Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
 
 /Users/nathanmautz/Documents/Chess/Tile.h
 Pieces/Piece.h
