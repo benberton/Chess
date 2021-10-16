@@ -22,6 +22,8 @@ public:
 
     char getSymbol();
 
+    bool hasPiece();
+
 private:
     int x;
     int y;

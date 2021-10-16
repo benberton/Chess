@@ -29,3 +29,7 @@ char Tile::getSymbol() {
         return piece->getSymbol();
     }
 }
+
+bool Tile::hasPiece() {
+    return piece != nullptr;
+}
