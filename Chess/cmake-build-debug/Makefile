@@ -129,6 +129,78 @@ Chess/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/build
 .PHONY : Chess/fast
 
+Board.o: Board.cpp.o
+.PHONY : Board.o
+
+# target to build an object file
+Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Board.cpp.o
+.PHONY : Board.cpp.o
+
+Board.i: Board.cpp.i
+.PHONY : Board.i
+
+# target to preprocess a source file
+Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Board.cpp.i
+.PHONY : Board.cpp.i
+
+Board.s: Board.cpp.s
+.PHONY : Board.s
+
+# target to generate assembly for a file
+Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Board.cpp.s
+.PHONY : Board.cpp.s
+
+Piece.o: Piece.cpp.o
+.PHONY : Piece.o
+
+# target to build an object file
+Piece.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Piece.cpp.o
+.PHONY : Piece.cpp.o
+
+Piece.i: Piece.cpp.i
+.PHONY : Piece.i
+
+# target to preprocess a source file
+Piece.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Piece.cpp.i
+.PHONY : Piece.cpp.i
+
+Piece.s: Piece.cpp.s
+.PHONY : Piece.s
+
+# target to generate assembly for a file
+Piece.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Piece.cpp.s
+.PHONY : Piece.cpp.s
+
+Tile.o: Tile.cpp.o
+.PHONY : Tile.o
+
+# target to build an object file
+Tile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Tile.cpp.o
+.PHONY : Tile.cpp.o
+
+Tile.i: Tile.cpp.i
+.PHONY : Tile.i
+
+# target to preprocess a source file
+Tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Tile.cpp.i
+.PHONY : Tile.cpp.i
+
+Tile.s: Tile.cpp.s
+.PHONY : Tile.s
+
+# target to generate assembly for a file
+Tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Tile.cpp.s
+.PHONY : Tile.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Chess"
+	@echo "... Board.o"
+	@echo "... Board.i"
+	@echo "... Board.s"
+	@echo "... Piece.o"
+	@echo "... Piece.i"
+	@echo "... Piece.s"
+	@echo "... Tile.o"
+	@echo "... Tile.i"
+	@echo "... Tile.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

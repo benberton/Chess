@@ -33,24 +33,6 @@ private:
     Team team;
 };
 
-void Piece::takePiece(Piece *otherPiece) {
-    otherPiece->death();
-}
-
-void Piece::death() {
-    //TODO
-    tile->setPiece()
-
-
-}
-
-Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
-    symbol = 'G';
-}
-
-char Piece::getSymbol() {
-    return symbol;
-}
 
 
 #endif //CHESS_PIECE_H

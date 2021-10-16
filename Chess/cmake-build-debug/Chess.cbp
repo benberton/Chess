@@ -80,10 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.cpp">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.h">
 			<Option target="Chess"/>
 		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Piece.cpp">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Piece.h">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Tile.cpp">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Tile.h">

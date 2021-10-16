@@ -6,13 +6,25 @@
 
 #IncludeRegexTransform: 
 
+/Users/nathanmautz/Documents/Chess/Board.cpp
+Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+
 /Users/nathanmautz/Documents/Chess/Board.h
 iostream
 -
 Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 
+/Users/nathanmautz/Documents/Chess/Piece.cpp
+Piece.h
 /Users/nathanmautz/Documents/Chess/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Piece.h
+Tile.h
+/Users/nathanmautz/Documents/Chess/Tile.h
+
+/Users/nathanmautz/Documents/Chess/Tile.cpp
 Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 
