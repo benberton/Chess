@@ -27,9 +27,17 @@ public:
 
 private:
     const char symbol;
-    Tile tile;
+    Tile* tile;
     Team team;
 };
+
+void Piece::takePiece() {
+    //TODO
+}
+
+void Piece::death() {
+    //TODO
+}
 
 
 #endif //CHESS_PIECE_H
