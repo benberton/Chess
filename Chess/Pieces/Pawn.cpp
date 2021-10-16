@@ -4,7 +4,7 @@
 
 #include "Pawn.h"
 
-bool Pawn::isValidMove(Tile destination) {
+bool Pawn::isValidMove(Tile *destination) {
     int direction = 1;
     if(team == white)
         direction = -1;

@@ -4,7 +4,7 @@
 
 #include "Rook.h"
 
-bool Rook::isValidMove(Tile destination) {
+bool Rook::isValidMove(Tile *destination) {
     //TODO
     return false;
 }

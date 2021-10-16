@@ -4,7 +4,7 @@
 
 #include "King.h"
 
-bool King::isValidMove(Tile destination) {
+bool King::isValidMove(Tile *destination) {
     //TODO
     return false;
 }

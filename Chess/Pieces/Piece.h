@@ -23,8 +23,8 @@ public:
     Team getTeam();
 
 
-    virtual bool isValidMove(Tile destination) = 0;
-    bool move(Tile destination);
+    virtual bool isValidMove(Tile *destination) = 0;
+    void move(Tile *destination);
 
 
 

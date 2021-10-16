@@ -7,7 +7,7 @@
 #include "Piece.h"
 
 class King :Piece{
-    bool isValidMove(Tile destination) override;
+    bool isValidMove(Tile *destination) override;
 
 };
 

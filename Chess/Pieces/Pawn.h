@@ -11,9 +11,7 @@
 
 class Pawn : Piece{
 
-    bool isValidMove(Tile destination) override;
-
-
+    bool isValidMove(Tile *destination) override;
 };
 
 

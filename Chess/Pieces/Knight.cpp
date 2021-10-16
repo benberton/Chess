@@ -4,7 +4,7 @@
 
 #include "Knight.h"
 
-bool Knight::isValidMove(Tile destination) {
+bool Knight::isValidMove(Tile *destination) {
     //TODO
     return false;
 }

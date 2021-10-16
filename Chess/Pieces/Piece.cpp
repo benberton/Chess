@@ -4,7 +4,10 @@
 #include "Piece.h"
 
 void Piece::takePiece(Piece *otherPiece) {
-    delete otherPiece;
+    if(otherPiece != nullptr)
+    {
+        delete otherPiece;
+    }
 }
 
 void Piece::death() {
@@ -28,7 +31,12 @@ Team Piece::getTeam() {
     return team;
 }
 
-bool Piece::move(Tile destination) {
-    //TODO
-    return false;
+void Piece::move(Tile *destination) {
+    if(isValidMove(destination))
+    {
+        takePiece(destination->getPiece());
+        tile->setPiece(nullptr);
+        destination->setPiece(this);
+        tile = destination;
+    }
 }

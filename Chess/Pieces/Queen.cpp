@@ -4,7 +4,7 @@
 
 #include "Queen.h"
 
-bool Queen::isValidMove(Tile destination) {
+bool Queen::isValidMove(Tile *destination) {
     //TODO
     return false;
 }

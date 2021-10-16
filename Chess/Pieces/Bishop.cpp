@@ -4,7 +4,7 @@
 
 #include "Bishop.h"
 
-bool Bishop::isValidMove(Tile destination) {
+bool Bishop::isValidMove(Tile *destination) {
     //TODO
     return false;
 }
