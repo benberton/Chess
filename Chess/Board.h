@@ -10,12 +10,14 @@
 class Board {
 public:
 
-    Board(int width);
+    static Board* getInstance();
 
     Tile* getTile(int x, int y);
     std::string toString();
 
 private:
+    Board(int width);
+    static Board* inst_;
     Tile*** tiles{};
     int width;
     //Helper function for toString
@@ -23,6 +25,7 @@ private:
 
 
 };
+
 
 
 

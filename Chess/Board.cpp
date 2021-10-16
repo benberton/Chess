@@ -68,3 +68,11 @@ char Board::intToChar(int val) {
     }
 }
 
+Board *Board::getInstance() {
+    if(inst_ == nullptr)
+    {
+        inst_ = new Board(8);
+    }
+    return inst_;
+}
+Board* Board::inst_ = nullptr;
