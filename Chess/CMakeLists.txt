@@ -3,4 +3,4 @@ project(Chess)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Chess main.cpp Piece.h Tile.h Board.h Board.cpp Piece.cpp Tile.cpp Pawn.cpp Pawn.h Knight.cpp Knight.h Bishop.cpp Bishop.h Queen.cpp Queen.h King.cpp King.h)
+add_executable(Chess main.cpp Piece.h Tile.h Board.h Board.cpp Piece.cpp Tile.cpp Pawn.cpp Pawn.h Knight.cpp Knight.h Bishop.cpp Bishop.h Queen.cpp Queen.h King.cpp King.h Rook.cpp Rook.h)

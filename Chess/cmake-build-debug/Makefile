@@ -297,6 +297,30 @@ Queen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Queen.cpp.s
 .PHONY : Queen.cpp.s
 
+Rook.o: Rook.cpp.o
+.PHONY : Rook.o
+
+# target to build an object file
+Rook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Rook.cpp.o
+.PHONY : Rook.cpp.o
+
+Rook.i: Rook.cpp.i
+.PHONY : Rook.i
+
+# target to preprocess a source file
+Rook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Rook.cpp.i
+.PHONY : Rook.cpp.i
+
+Rook.s: Rook.cpp.s
+.PHONY : Rook.s
+
+# target to generate assembly for a file
+Rook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Chess.dir/build.make CMakeFiles/Chess.dir/Rook.cpp.s
+.PHONY : Rook.cpp.s
+
 Tile.o: Tile.cpp.o
 .PHONY : Tile.o
 
@@ -375,6 +399,9 @@ help:
 	@echo "... Queen.o"
 	@echo "... Queen.i"
 	@echo "... Queen.s"
+	@echo "... Rook.o"
+	@echo "... Rook.i"
+	@echo "... Rook.s"
 	@echo "... Tile.o"
 	@echo "... Tile.i"
 	@echo "... Tile.s"
