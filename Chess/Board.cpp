@@ -76,3 +76,8 @@ Board *Board::getInstance() {
     return inst_;
 }
 Board* Board::inst_ = nullptr;
+
+void Board::setPieces() {
+
+
+}

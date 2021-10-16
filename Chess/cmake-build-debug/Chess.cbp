@@ -80,10 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Bishop.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Bishop.h">
+			<Option target="Chess"/>
+		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.cpp">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.h">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/King.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/King.h">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Knight.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Knight.h">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Pawn.cpp">
@@ -96,6 +114,12 @@
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Piece.h">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Queen.cpp">
+			<Option target="Chess"/>
+		</Unit>
+		<Unit filename="/Users/nathanmautz/Documents/Chess/Queen.h">
 			<Option target="Chess"/>
 		</Unit>
 		<Unit filename="/Users/nathanmautz/Documents/Chess/Tile.cpp">
