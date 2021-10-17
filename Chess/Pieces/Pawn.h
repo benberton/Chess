@@ -16,7 +16,7 @@ public:
 private:
 
 public:
-    void move(Tile *destination) override;
+    virtual void move(Tile *destination) override;
 
 private:
 

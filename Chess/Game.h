@@ -3,9 +3,9 @@
 //
 
 //TODO: In order of importance
-//Pawn can Turn into new piece // Method that makes a new piece that "takes" the pawn
 //En passant
 //Check that promoting doesnt force stalemate
+//Promoting resets movecount//maybe change
 
 
 
@@ -18,6 +18,7 @@
 
 #include "Board.h"
 #include "Pieces/King.h"
+
 using namespace std;
 class Game{
 public:
@@ -25,6 +26,8 @@ public:
 
     static Game* getInstance();
     void play();
+    Piece* promotePawn(Piece* pawn);
+
 
 
 
@@ -33,6 +36,9 @@ private:
     void playTurn(Team team);
     void tryMovePiece(string start, string stop, Team team);
     bool canPlay(Team team);
+
+    char getPromoteInput();
+
     int letterConversion(char value);
     int numberConversion(char value);
 

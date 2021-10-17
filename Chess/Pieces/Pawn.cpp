@@ -3,6 +3,7 @@
 //
 
 #include "Pawn.h"
+#include "../Game.h"
 
 
 bool Pawn::isValidMove(Tile *destination) {
@@ -50,13 +51,21 @@ Pawn::Pawn(Tile *tile, Team team) : Piece(tile, team) {
 }
 
 void Pawn::move(Tile *destination) {
-    Piece::move(destination);
 
-    //Changes Pawn to
+
+    int destY = destination->getY();
+    //Promotes if needed
     if(isValidMove(destination))
     {
-
-
+        Piece::move(destination);
+        if((team == white and destY == 7) or (team == black and destY == 0))
+        {
+            Game* game = Game::getInstance();
+            //Tile is unlinked with this after promotePawn()
+            game->promotePawn(this);
+            tile = nullptr;
+            delete this;
+        }
 
 
     }

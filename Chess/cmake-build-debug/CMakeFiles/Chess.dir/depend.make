@@ -16,8 +16,12 @@ CMakeFiles/Chess.dir/Game.cpp.o: \
  ../Board.h \
  ../Game.cpp \
  ../Game.h \
+ ../Pieces/Bishop.h \
  ../Pieces/King.h \
+ ../Pieces/Knight.h \
  ../Pieces/Piece.h \
+ ../Pieces/Queen.h \
+ ../Pieces/Rook.h \
  ../Tile.h
 CMakeFiles/Chess.dir/Pieces/Bishop.cpp.o: \
  ../Board.h \
@@ -39,6 +43,8 @@ CMakeFiles/Chess.dir/Pieces/Knight.cpp.o: \
  ../Tile.h
 CMakeFiles/Chess.dir/Pieces/Pawn.cpp.o: \
  ../Board.h \
+ ../Game.h \
+ ../Pieces/King.h \
  ../Pieces/Pawn.cpp \
  ../Pieces/Pawn.h \
  ../Pieces/Piece.h \
@@ -69,6 +75,7 @@ CMakeFiles/Chess.dir/main.cpp.o: \
  ../Board.h \
  ../Game.h \
  ../Pieces/King.h \
+ ../Pieces/Pawn.h \
  ../Pieces/Piece.h \
  ../Tile.h \
  ../main.cpp

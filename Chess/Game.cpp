@@ -3,6 +3,10 @@
 //
 
 #include "Game.h"
+#include "Pieces/Queen.h"
+#include "Pieces/Rook.h"
+#include "Pieces/Knight.h"
+#include "Pieces/Bishop.h"
 
 Game::Game() {
     board = Board::getInstance();
@@ -172,6 +176,37 @@ int Game::numberConversion(char value)
         return 7;
     }
     return 0;
+}
+
+Piece *Game::promotePawn(Piece *pawn) {
+    char input = getPromoteInput();
+    Piece* newPiece = nullptr;
+
+    Tile* tile = pawn->getTile();
+    Team team = pawn->getTeam();
+
+
+
+    switch (input) {
+        case 'Q' : newPiece = new Queen(tile,team); break;
+        case 'R' : newPiece = new Rook(tile,team); break;
+        case 'H' : newPiece = new Knight(tile,team); break;
+        case 'B' : newPiece = new Bishop(tile,team); break;
+        default: return promotePawn(pawn);
+
+    }
+
+    return newPiece;
+
+}
+
+char Game::getPromoteInput() {
+    std::cout << "Pawn reached end! \nPromote to (Q)ueen, (R)ook, (H)orse/Knight, or (B)ishop?" << std::endl;
+    char c;
+    std::cin >> c;
+    return c;
+
+
 }
 
 

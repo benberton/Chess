@@ -10,8 +10,7 @@ Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
     moveCount = 0;
 
     //Sets tile to point to this automatically
-    Board* board = Board::getInstance();
-    board->getTile(tile->getX(), tile->getY())->setPiece(this);
+    tile->setPiece(this);
 
 
 }
@@ -33,8 +32,12 @@ void Piece::takePiece(Piece *otherPiece) {
 }
 
 void Piece::death() {
-    tile->setPiece(nullptr);
-    tile = nullptr;
+    if(tile != nullptr)
+    {
+        tile->setPiece(nullptr);
+        tile = nullptr;
+    }
+
 }
 
 Team Piece::getTeam() {
@@ -68,3 +71,8 @@ bool Piece::canPlay() {
     }
     return false;
 }
+
+Tile *Piece::getTile() {
+    return tile;
+}
+

@@ -18,12 +18,15 @@ public:
 
 
     Piece(Tile *tile, Team team);
+
+
     virtual ~Piece();
     void takePiece(Piece *otherPiece);
     void death();
     char getSymbol();
     Team getTeam();
     bool canPlay();
+    Tile* getTile();
 
 
     virtual bool isValidMove(Tile *destination) = 0;
