@@ -6,33 +6,33 @@
 
 #IncludeRegexTransform: 
 
-C:/Hackathon/Chess/Chess/Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
 iostream
 -
 Tile.h
-C:/Hackathon/Chess/Chess/Tile.h
+/Users/nathanmautz/Documents/Chess/Tile.h
 
-C:/Hackathon/Chess/Chess/Game.cpp
+/Users/nathanmautz/Documents/Chess/Game.cpp
 Game.h
-C:/Hackathon/Chess/Chess/Game.h
+/Users/nathanmautz/Documents/Chess/Game.h
 
-C:/Hackathon/Chess/Chess/Game.h
+/Users/nathanmautz/Documents/Chess/Game.h
 Board.h
-C:/Hackathon/Chess/Chess/Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
 Pieces/King.h
-C:/Hackathon/Chess/Chess/Pieces/King.h
+/Users/nathanmautz/Documents/Chess/Pieces/King.h
 
-C:/Hackathon/Chess/Chess/Pieces/King.h
+/Users/nathanmautz/Documents/Chess/Pieces/King.h
 Piece.h
-C:/Hackathon/Chess/Chess/Pieces/Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 
-C:/Hackathon/Chess/Chess/Pieces/Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 ../Tile.h
-C:/Hackathon/Chess/Chess/Tile.h
+/Users/nathanmautz/Documents/Chess/Tile.h
 ../Board.h
-C:/Hackathon/Chess/Chess/Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
 
-C:/Hackathon/Chess/Chess/Tile.h
+/Users/nathanmautz/Documents/Chess/Tile.h
 Pieces/Piece.h
-C:/Hackathon/Chess/Chess/Pieces/Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 

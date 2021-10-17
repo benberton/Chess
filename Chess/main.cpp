@@ -1,19 +1,11 @@
-#include <iostream>
-#include "Board.h"
-#include "Pieces/Pawn.h"
-#include "Pieces/Rook.h"
-#include "Pieces/Knight.h"
-#include "Pieces/King.h"
-#include "Pieces/Bishop.h"
-#include "Pieces/Queen.h"
+#include "Game.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Game* game = new Game();
+    game->play();
 
+    delete game;
 
-    Board* board = Board::getInstance();
-    board->setPieces();
-    std::cout << board->toString() << std::endl;
 
 
 

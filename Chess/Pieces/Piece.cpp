@@ -43,3 +43,20 @@ void Piece::move(Tile *destination) {
         tile = destination;
     }
 }
+
+bool Piece::canPlay() {
+    Board* board = Board::getInstance();
+    for(int i = 0; i < board->getWidth(); ++i)
+    {
+        for(int j = 0; j < board->getWidth(); ++j)
+        {
+            if(isValidMove(board->getTile(i,j)))
+            {
+                return true;
+            }
+
+
+        }
+    }
+    return false;
+}

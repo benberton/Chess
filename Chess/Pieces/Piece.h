@@ -23,6 +23,7 @@ public:
     void death();
     char getSymbol();
     Team getTeam();
+    bool canPlay();
 
 
     virtual bool isValidMove(Tile *destination) = 0;

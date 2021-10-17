@@ -6,8 +6,9 @@
 
 Game::Game() {
     board = Board::getInstance();
-    kw = dynamic_cast<King *>(board->getTile(3, 0)->getPiece());
-    kb = dynamic_cast<King *>(board->getTile(3, 7)->getPiece());
+    board->setPieces();
+    kw = dynamic_cast<King *>(board->getTile(4, 0)->getPiece());
+    kb = dynamic_cast<King *>(board->getTile(4, 7)->getPiece());
 
 }
 
@@ -76,7 +77,7 @@ void Game::tryMovePiece(string start, string stop, Team team) {
     endingY = numberConversion(endY);
 
     Piece* p = board->getTile(startingX,startingY)->getPiece();
-    if( p == nullptr || (p->getTeam() != team) || p->isValidMove(board->getTile(endingX,endingY)))
+    if( p == nullptr || (p->getTeam() != team) || !(p->isValidMove(board->getTile(endingX,endingY))))
     {
         cout << "Bad Selection" << endl;
         playTurn(team);
@@ -144,4 +145,24 @@ int Game::numberConversion(char value)
         return 7;
     }
     return 0;
+}
+
+bool Game::canPlay(Team team) {
+    for(int i = 0; i < board->getWidth(); ++i) {
+        for (int j = 0; j < board->getWidth(); ++j) {
+
+            Piece *piece = board->getTile(i, j)->getPiece();
+            if (piece != nullptr and (piece->getTeam() == team)){
+                if(piece->canPlay())
+                    return true;
+
+
+            }
+
+
+
+
+        }
+    }
+    return false;
 }
