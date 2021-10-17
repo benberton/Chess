@@ -251,3 +251,8 @@ void Board::setPieces() {
 int Board::getWidth() const {
     return width;
 }
+
+void Board::setColor(unsigned short color) {
+    HANDLE hcon = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hcon,color);
+}

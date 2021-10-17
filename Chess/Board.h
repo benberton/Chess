@@ -32,6 +32,7 @@ private:
     int width;
     //Helper function for toString
     char intToChar(int val);
+    void setColor(unsigned short color);
 
 
 };
