@@ -54,6 +54,7 @@ CMakeFiles/Chess.dir/Tile.cpp.o: \
  ../Tile.h
 CMakeFiles/Chess.dir/main.cpp.o: \
  ../Board.h \
+ ../Pieces/Bishop.h \
  ../Pieces/King.h \
  ../Pieces/Knight.h \
  ../Pieces/Pawn.h \
