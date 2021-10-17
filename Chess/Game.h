@@ -2,11 +2,10 @@
 // Created by Nathan Mautz on 10/16/21.
 //
 
-//TODO
-//In order of importance
-//Pawn can move 2 on starting turn
+//TODO: In order of importance
 //Pawn can Turn into new piece // Method that makes a new piece that "takes" the pawn
 //En passant
+//Check that promoting doesnt force stalemate
 
 
 

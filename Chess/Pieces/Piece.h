@@ -27,7 +27,7 @@ public:
 
 
     virtual bool isValidMove(Tile *destination) = 0;
-    void move(Tile *destination);
+    virtual void move(Tile *destination);
 
 
 

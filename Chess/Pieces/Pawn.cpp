@@ -49,3 +49,16 @@ Pawn::Pawn(Tile *tile, Team team) : Piece(tile, team) {
     symbol = 'P';
 }
 
+void Pawn::move(Tile *destination) {
+    Piece::move(destination);
+
+    //Changes Pawn to
+    if(isValidMove(destination))
+    {
+
+
+
+
+    }
+}
+

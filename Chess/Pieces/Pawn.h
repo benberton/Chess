@@ -15,6 +15,11 @@ public:
 
 private:
 
+public:
+    void move(Tile *destination) override;
+
+private:
+
     bool isValidMove(Tile *destination) override;
 };
 

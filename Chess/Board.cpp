@@ -10,7 +10,6 @@
 #include "Pieces/Queen.h"
 
 std::string Board::toString() {
-    //TODO
     int rowNum = 8;
     char piece = 'o';
     std::string str = "";
