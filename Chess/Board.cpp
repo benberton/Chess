@@ -84,3 +84,7 @@ void Board::setPieces() {
 
 
 }
+
+int Board::getWidth() const {
+    return width;
+}

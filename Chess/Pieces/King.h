@@ -9,9 +9,14 @@
 class King : public Piece{
 public:
     King(Tile *tile, Team team);
+    bool isInCheck();
+    bool isMate();
 
 private:
     bool isValidMove(Tile *destination) override;
+    bool canMove();
+    bool isCheckedAt(Tile* destination);
+
 
 };
 
