@@ -17,7 +17,6 @@ public:
 
     Tile* getTile(int x, int y);
     std::string toString();
-
     int getWidth() const;
     void setPieces();
 

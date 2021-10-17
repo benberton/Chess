@@ -2,6 +2,17 @@
 // Created by Nathan Mautz on 10/16/21.
 //
 
+//TODO
+//In order of importance
+//Pawn moves 2 on starting turn // convert game to singleton and track turns
+//Pawn can Turn into new piece // Method that makes a new piece that "takes" the pawn
+//En passant
+
+
+
+
+
+
 #ifndef CHESS_GAME_H
 #define CHESS_GAME_H
 
@@ -11,12 +22,15 @@
 using namespace std;
 class Game{
 public:
-    Game();
+
+
+    static Game* getInstance();
     void play();
 
 
-private:
 
+private:
+    Game();
     void playTurn(Team team);
     void tryMovePiece(string start, string stop, Team team);
     bool canPlay(Team team);
@@ -24,6 +38,7 @@ private:
     int numberConversion(char value);
 
 
+    static Game* inst_;
     Board* board;
     King* kw;
     King* kb;

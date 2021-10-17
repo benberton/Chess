@@ -166,3 +166,12 @@ bool Game::canPlay(Team team) {
     }
     return false;
 }
+
+Game *Game::getInstance() {
+    if(inst_ == nullptr)
+    {
+        inst_ = new Game();
+    }
+    return inst_;
+}
+Game* Game::inst_ = nullptr;
