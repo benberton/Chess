@@ -11,6 +11,7 @@ King::King(Tile *tile, Team team) : Piece(tile, team) {
 
 bool King::isValidMove(Tile *destination) {
 
+
     if(destination->hasPiece())
     {
         Piece* p = destination->getPiece();
@@ -73,6 +74,9 @@ bool King::isCheckedAt(Tile *destination) {
 
     Board* board = Board::getInstance();
 
+    tile->setPiece(nullptr);
+    bool isChecked = false;
+
     for(int i = 0; i < board->getWidth(); ++i)
     {
         for(int j = 0; j < board->getWidth(); ++j)
@@ -84,7 +88,7 @@ bool King::isCheckedAt(Tile *destination) {
                 {
                     if(p->isValidMove(destination))
                     {
-                        return true;
+                        isChecked = true;
                     }
                 }
             }
@@ -95,6 +99,7 @@ bool King::isCheckedAt(Tile *destination) {
     }
 
 
-    return false;
+    tile->setPiece(this);
+    return isChecked;
 }
 
