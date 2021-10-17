@@ -2,6 +2,12 @@
 // Created by Nathan Mautz on 10/16/21.
 //
 #include "Board.h"
+#include "Pieces/Pawn.h"
+#include "Pieces/Rook.h"
+#include "Pieces/Knight.h"
+#include "Pieces/Bishop.h"
+#include "Pieces/King.h"
+#include "Pieces/Queen.h"
 
 std::string Board::toString() {
     //TODO
@@ -87,6 +93,40 @@ Board* Board::inst_ = nullptr;
 
 void Board::setPieces() {
 
+//white pieces
+    for (int i = 0; i < 8; ++i)
+    {
+
+        getTile(i, 1)->setPiece(new Pawn(getTile(i, 1), white));
+
+
+    }
+    getTile(0, 0)->setPiece(new Rook(getTile(0, 0), white));
+    getTile(7, 0)->setPiece(new Rook(getTile(7, 0), white));
+    getTile(1, 0)->setPiece(new Knight(getTile(1, 0), white));
+    getTile(6, 0)->setPiece(new Knight(getTile(6, 0), white));
+    getTile(2, 0)->setPiece(new Bishop(getTile(2, 0), white));
+    getTile(5, 0)->setPiece(new Bishop(getTile(5, 0), white));
+    getTile(4, 0)->setPiece(new King(getTile(3, 0), white));
+    getTile(3, 0)->setPiece(new Queen(getTile(4, 0), white));
+
+
+//black pieces
+    for (int i = 0; i < 8; ++i)
+    {
+
+        getTile(i, 6)->setPiece(new Pawn(getTile(i, 6), black));
+
+
+    }
+    getTile(0, 7)->setPiece(new Rook(getTile(0, 7), black));
+    getTile(7, 7)->setPiece(new Rook(getTile(7, 7), black));
+    getTile(1, 7)->setPiece(new Knight(getTile(1, 7), black));
+    getTile(6, 7)->setPiece(new Knight(getTile(6, 7), black));
+    getTile(2, 7)->setPiece(new Bishop(getTile(2, 7), black));
+    getTile(5, 7)->setPiece(new Bishop(getTile(5, 7), black));
+    getTile(4, 7)->setPiece(new King(getTile(3, 7), black));
+    getTile(3, 7)->setPiece(new Queen(getTile(4, 7), black));
 
 }
 
