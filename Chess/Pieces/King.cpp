@@ -34,18 +34,35 @@ bool King::isValidMove(Tile *destination) {
 }
 
 bool King::isInCheck() {
-    //TODO
-    return false;
+    return isCheckedAt(tile);
 }
 
 bool King::isMate() {
-    //TODO
-    return false;
+    return isInCheck()&&!canMove();
 }
 
 bool King::canMove() {
-    //TODO
+    Board* board = Board::getInstance();
+    Tile* tiles[8];
+    int x = tile->getX();
+    int y = tile->getY();
+
+    tiles[0] = board->getTile(x+1,y);
+    tiles[1] = board->getTile(x-1,y);
+    tiles[2] = board->getTile(x,y+1);
+    tiles[3] = board->getTile(x,y-1);
+    tiles[4] = board->getTile(x+1,y+1);
+    tiles[5] = board->getTile(x-1,y-1);
+    tiles[6] = board->getTile(x+1,y-1);
+    tiles[7] = board->getTile(x-1,y+1);
+
+    for(int i = 0; i < 8; ++i)
+    {
+        if(!isCheckedAt(tiles[i]))
+            return true;
+    }
     return false;
+
 }
 
 bool King::isCheckedAt(Tile *destination) {
