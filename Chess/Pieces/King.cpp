@@ -57,15 +57,17 @@ bool King::isCheckedAt(Tile *destination) {
         for(int j = 0; j < board->getWidth(); ++j)
         {
             Piece* p = board->getTile(i,j)->getPiece();
-            if(p->getTeam() != getTeam())
+            if(p != nullptr and p != this)
             {
-                if(p->isValidMove(tile))
+                if(p->getTeam() != getTeam())
                 {
-                    return true;
+                    if(p->isValidMove(tile))
+                    {
+                        return true;
+                    }
                 }
-
-
             }
+
 
 
         }
