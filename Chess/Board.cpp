@@ -11,7 +11,7 @@
 
 std::string Board::toString() {
     //TODO
-    static int rowNum = 8;
+    int rowNum = 8;
     char piece = 'o';
     std::string str = "";
 

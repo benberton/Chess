@@ -25,38 +25,18 @@ bool Bishop::isValidMove(Tile *destination) {
         return false;
     }
 
-    int largerX, smallerX, largerY,smallerY;
-    if(destination->getX() > tile->getX())
-    {
-        largerX = destination->getX();
-        smallerX = tile->getX();
-    }else
-    {
-        largerX = tile->getX();
-        smallerX = destination->getX();
-    }
-    if(destination->getY() > tile->getY())
-    {
-        largerY = destination->getY();
-        smallerY = tile->getY();
-    }else
-    {
-        largerY = tile->getY();
-        smallerY = destination->getY();
-    }
-
     Board* board = Board::getInstance();
+    int x = tile->getX();
+    int y = tile->getY();
 
-    for(int i = smallerX+1; i < largerX; ++i)
+    while(++x != destination->getX() and ++y != destination->getY())
     {
-        for(int j = smallerY+1; j < largerY; ++j)
+
+        if(board->getTile(x,y)->hasPiece())
         {
-            Tile* t = board->getTile(i, j);
-            if(t->hasPiece())
-            {return false;}
-
-
+            return false;
         }
+
     }
 
 
