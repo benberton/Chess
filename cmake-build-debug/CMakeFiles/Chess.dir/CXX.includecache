@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Hackathon/Chess/Chess/Board.h
+iostream
+-
+Tile.h
+C:/Hackathon/Chess/Chess/Tile.h
+
+C:/Hackathon/Chess/Chess/Piece.h
+Tile.h
+C:/Hackathon/Chess/Chess/Tile.h
+
+C:/Hackathon/Chess/Chess/Tile.h
+Piece.h
+C:/Hackathon/Chess/Chess/Piece.h
+
+C:/Hackathon/Chess/Chess/main.cpp
+iostream
+-
+Board.h
+C:/Hackathon/Chess/Chess/Board.h
+
