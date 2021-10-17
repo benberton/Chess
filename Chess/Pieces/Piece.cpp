@@ -3,6 +3,28 @@
 //
 #include "Piece.h"
 
+
+
+Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
+    symbol = 'G';
+    moveCount = 0;
+
+    //Sets tile to point to this automatically
+    Board* board = Board::getInstance();
+    board->getTile(tile->getX(), tile->getY())->setPiece(this);
+
+
+}
+
+
+Piece::~Piece() {
+    death();
+}
+
+char Piece::getSymbol() {
+    return symbol;
+}
+
 void Piece::takePiece(Piece *otherPiece) {
     if(otherPiece != nullptr)
     {
@@ -13,21 +35,6 @@ void Piece::takePiece(Piece *otherPiece) {
 void Piece::death() {
     tile->setPiece(nullptr);
     tile = nullptr;
-}
-
-Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
-    symbol = 'G';
-    Board* board = Board::getInstance();
-    board->getTile(tile->getX(), tile->getY())->setPiece(this);
-
-}
-
-char Piece::getSymbol() {
-    return symbol;
-}
-
-Piece::~Piece() {
-    death();
 }
 
 Team Piece::getTeam() {
@@ -41,6 +48,7 @@ void Piece::move(Tile *destination) {
         tile->setPiece(nullptr);
         destination->setPiece(this);
         tile = destination;
+        ++moveCount;
     }
 }
 

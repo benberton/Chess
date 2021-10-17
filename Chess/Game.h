@@ -4,7 +4,7 @@
 
 //TODO
 //In order of importance
-//Pawn moves 2 on starting turn // convert game to singleton and track turns
+//Pawn can move 2 on starting turn
 //Pawn can Turn into new piece // Method that makes a new piece that "takes" the pawn
 //En passant
 

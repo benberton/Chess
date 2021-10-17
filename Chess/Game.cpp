@@ -40,6 +40,29 @@ void Game::play()
 
 }
 
+bool Game::canPlay(Team team) {
+    for(int i = 0; i < board->getWidth(); ++i) {
+        for (int j = 0; j < board->getWidth(); ++j) {
+
+            Piece *piece = board->getTile(i, j)->getPiece();
+            if (piece != nullptr and (piece->getTeam() == team)){
+                if(piece->canPlay())
+                    return true;
+            }
+        }
+    }
+    return false;
+}
+
+Game *Game::getInstance() {
+    if(inst_ == nullptr)
+    {
+        inst_ = new Game();
+    }
+    return inst_;
+}
+Game* Game::inst_ = nullptr;
+
 void Game::playTurn(Team team)
 {
     cout << board->toString() << endl;
@@ -87,6 +110,9 @@ void Game::tryMovePiece(string start, string stop, Team team) {
     }
 
 }
+
+
+//Helps with converting input to something usable by the pieces
 int Game::letterConversion(char value)
 {
     if(value == 'A')
@@ -117,6 +143,7 @@ int Game::letterConversion(char value)
     return 0;
 
 }
+
 int Game::numberConversion(char value)
 {
     if(value == '1')
@@ -147,31 +174,4 @@ int Game::numberConversion(char value)
     return 0;
 }
 
-bool Game::canPlay(Team team) {
-    for(int i = 0; i < board->getWidth(); ++i) {
-        for (int j = 0; j < board->getWidth(); ++j) {
 
-            Piece *piece = board->getTile(i, j)->getPiece();
-            if (piece != nullptr and (piece->getTeam() == team)){
-                if(piece->canPlay())
-                    return true;
-
-
-            }
-
-
-
-
-        }
-    }
-    return false;
-}
-
-Game *Game::getInstance() {
-    if(inst_ == nullptr)
-    {
-        inst_ = new Game();
-    }
-    return inst_;
-}
-Game* Game::inst_ = nullptr;

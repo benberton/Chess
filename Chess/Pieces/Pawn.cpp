@@ -25,13 +25,21 @@ bool Pawn::isValidMove(Tile *destination) {
         return false;
     }
 
+    //Checks if pawn can move to spot in front of it
     if((tile->getY() - destination->getY()) * direction == 1)
     {
         Piece* otherPiece = destination->getPiece();
         if(otherPiece == nullptr)
             return true;
         return false;
-    } //Checks if pawn can move to spot in front of it
+    }
+
+    //Checks for starting move of 2 spaces forward
+    if((tile->getY() - destination->getY()) * direction == 2)
+    {
+        if(moveCount == 0)
+            return true;
+    }
 
 
     return false;

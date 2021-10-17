@@ -32,6 +32,7 @@ public:
 
 
 protected:
+    int moveCount;
     char symbol;
     Tile* tile;
     Team team;
