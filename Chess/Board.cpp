@@ -3,6 +3,128 @@
 //
 #include "Board.h"
 
+
+void Board::printBoard(void)
+{
+    int rowNum = 8;
+    char piece = 'o';
+
+
+    cout << "        A        B        C        D        E        F        G        H\n";
+
+    int evenOdd = 1;
+    for (int i = 8; i > 0; i--)
+    {
+
+
+        setColor(7);
+        cout << "    ";
+        if(evenOdd % 2 == 1)
+        {
+            for(int x = 0; x < 4; x++ )
+            {
+                setColor(47);
+                cout << "         ";
+                setColor(127);
+                cout << "         ";
+            }
+        }else
+        {
+            for(int x = 0; x < 4; x++ )
+            {
+                setColor(127);
+                cout << "         ";
+                setColor(47);
+                cout << "         ";
+            }
+
+        }
+
+        cout << "\n";
+
+
+        setColor(7);
+        cout << rowNum;
+        cout << "   ";
+        rowNum--;
+
+        for (int j = 1; j < 9; ++j) {
+            int boardColor1 = 127;
+            int boardColor2 = 47;
+            Piece* piece = getTile(j-1,i-1)->getPiece();
+            if(piece != nullptr)
+            {
+                if(piece->getTeam() == white)
+                {
+
+                    boardColor1 = 127;
+                    boardColor2 = 47;
+                }else if (piece->getTeam() == black)
+                {
+                    boardColor1 = 112;
+                    boardColor2 = 32;
+                }else
+                {
+                    boardColor1 = 127;
+                    boardColor2 = 47;
+                }
+
+            }
+
+
+
+            if(evenOdd % 2 == 0)
+            {
+
+                setColor(boardColor1);
+                cout << "    ";
+                cout << getTile(j-1,i-1)->getSymbol();
+                cout << "    ";
+
+
+            }else
+            {
+
+                setColor(boardColor2);
+                cout << "    ";
+                cout << getTile(j-1,i-1)->getSymbol();
+                cout << "    ";
+
+            }
+            evenOdd++;
+        }
+
+        setColor(7);
+        cout << "\n    ";
+        if(evenOdd % 2 == 1)
+        {
+            for(int x = 0; x < 4; x++ )
+            {
+                setColor(47);
+                cout << "         ";
+                setColor(127);
+                cout << "         ";
+            }
+        }else
+        {
+            for(int x = 0; x < 4; x++ )
+            {
+                setColor(127);
+                cout << "         ";
+                setColor(47);
+                cout << "         ";
+            }
+
+        }
+        cout << "\n";
+
+        evenOdd++;
+    }
+
+}
+
+
+
 std::string Board::toString() {
     //TODO
     static int rowNum = 8;
@@ -80,7 +202,13 @@ Board *Board::getInstance() {
 }
 Board* Board::inst_ = nullptr;
 
+
+
 void Board::setPieces() {
 
 
+}
+void Board::setColor(unsigned short color) {
+    HANDLE hcon = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hcon,color);
 }
