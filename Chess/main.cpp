@@ -12,7 +12,9 @@ int main() {
     Board* board = Board::getInstance();
     Piece* p1 = new King(board->getTile(0,0), white);
     //Piece* rook2 = new Rook(board->getTile(0,7), white);
+    Piece* p2 = new Rook(board->getTile(1, 7), black);
     std::cout << board->toString() << std::endl;
+
     p1->move(board->getTile(1,1));
     std::cout << board->toString() << std::endl;
 

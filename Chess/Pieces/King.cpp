@@ -61,7 +61,7 @@ bool King::isCheckedAt(Tile *destination) {
             {
                 if(p->getTeam() != getTeam())
                 {
-                    if(p->isValidMove(tile))
+                    if(p->isValidMove(destination))
                     {
                         return true;
                     }
