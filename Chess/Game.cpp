@@ -42,7 +42,7 @@ void Game::play()
 
 void Game::playTurn(Team team)
 {
-    cout << board->toString() << endl;
+    board->printBoard();
     string teamStr;
     if(team == white)
     {
