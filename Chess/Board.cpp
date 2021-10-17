@@ -56,14 +56,12 @@ Board::Board(int width) {
     }
     for(int i = 0; i < width; ++i) //Creates all tiles
     {
-        for(int j = 0; j < width; ++j)
-        {
+        for (int j = 0; j < width; ++j) {
 
             tiles[i][j] = new Tile(i, j);
 
         }
     }
-
 }
 
 char Board::intToChar(int val) {
@@ -94,39 +92,38 @@ Board* Board::inst_ = nullptr;
 void Board::setPieces() {
 
 //white pieces
-    for (int i = 0; i < 8; ++i)
+    for(int i = 0; i < 8; ++i)
     {
-
-        getTile(i, 1)->setPiece(new Pawn(getTile(i, 1), white));
-
+        tiles[i][1]->setPiece(new Pawn(tiles[i][1], white));
 
     }
-    getTile(0, 0)->setPiece(new Rook(getTile(0, 0), white));
-    getTile(7, 0)->setPiece(new Rook(getTile(7, 0), white));
-    getTile(1, 0)->setPiece(new Knight(getTile(1, 0), white));
-    getTile(6, 0)->setPiece(new Knight(getTile(6, 0), white));
-    getTile(2, 0)->setPiece(new Bishop(getTile(2, 0), white));
-    getTile(5, 0)->setPiece(new Bishop(getTile(5, 0), white));
-    getTile(4, 0)->setPiece(new King(getTile(3, 0), white));
-    getTile(3, 0)->setPiece(new Queen(getTile(4, 0), white));
+
+    tiles[0][0]->setPiece(new Rook(tiles[0][0], white));
+    tiles[7][0]->setPiece(new Rook( tiles[7][0], white));
+    tiles[1][0]->setPiece(new Knight( tiles[1][0], white));
+    tiles[6][0]->setPiece(new Knight( tiles[6][0], white));
+    tiles[2][0]->setPiece(new Bishop( tiles[2][0], white));
+    tiles[5][0]->setPiece(new Bishop(tiles[5][0], white));
+    tiles[4][0]->setPiece(new King(tiles[4][0], white));
+    tiles[3][0]->setPiece(new Queen( tiles[3][0], white));
 
 
 //black pieces
     for (int i = 0; i < 8; ++i)
     {
 
-        getTile(i, 6)->setPiece(new Pawn(getTile(i, 6), black));
+        tiles[i][6]->setPiece(new Pawn(tiles[i][6], black));
 
 
     }
-    getTile(0, 7)->setPiece(new Rook(getTile(0, 7), black));
-    getTile(7, 7)->setPiece(new Rook(getTile(7, 7), black));
-    getTile(1, 7)->setPiece(new Knight(getTile(1, 7), black));
-    getTile(6, 7)->setPiece(new Knight(getTile(6, 7), black));
-    getTile(2, 7)->setPiece(new Bishop(getTile(2, 7), black));
-    getTile(5, 7)->setPiece(new Bishop(getTile(5, 7), black));
-    getTile(4, 7)->setPiece(new King(getTile(3, 7), black));
-    getTile(3, 7)->setPiece(new Queen(getTile(4, 7), black));
+    tiles[0][7]->setPiece(new Rook(tiles[0][7], black));
+    tiles[7][7]->setPiece(new Rook( tiles[7][7], black));
+    tiles[1][7]->setPiece(new Knight(tiles[1][7], black));
+    tiles[6][7]->setPiece(new Knight( tiles[6][7], black));
+    tiles[2][7]->setPiece(new Bishop(tiles[2][7], black));
+    tiles[5][7]->setPiece(new Bishop( tiles[5][7], black));
+    tiles[4][7]->setPiece(new King( tiles[4][7], black));
+    tiles[3][7]->setPiece(new Queen(tiles[3][7], black));
 
 }
 

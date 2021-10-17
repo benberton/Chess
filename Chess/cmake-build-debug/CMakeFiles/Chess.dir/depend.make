@@ -4,6 +4,19 @@
 CMakeFiles/Chess.dir/Board.cpp.o: \
  ../Board.cpp \
  ../Board.h \
+ ../Pieces/Bishop.h \
+ ../Pieces/King.h \
+ ../Pieces/Knight.h \
+ ../Pieces/Pawn.h \
+ ../Pieces/Piece.h \
+ ../Pieces/Queen.h \
+ ../Pieces/Rook.h \
+ ../Tile.h
+CMakeFiles/Chess.dir/Game.cpp.o: \
+ ../Board.h \
+ ../Game.cpp \
+ ../Game.h \
+ ../Pieces/King.h \
  ../Pieces/Piece.h \
  ../Tile.h
 CMakeFiles/Chess.dir/Pieces/Bishop.cpp.o: \

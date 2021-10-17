@@ -19,6 +19,7 @@ public:
     std::string toString();
 
     int getWidth() const;
+    void setPieces();
 
 private:
     Board(int width);
@@ -27,7 +28,7 @@ private:
     int width;
     //Helper function for toString
     char intToChar(int val);
-    void setPieces();
+
 
 };
 
