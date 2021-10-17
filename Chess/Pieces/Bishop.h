@@ -6,7 +6,11 @@
 #define CHESS_BISHOP_H
 #include "Piece.h"
 
-class Bishop :Piece{
+class Bishop :public Piece{
+public:
+    Bishop(Tile *tile, Team team);
+
+private:
     bool isValidMove(Tile *destination) override;
 
 };

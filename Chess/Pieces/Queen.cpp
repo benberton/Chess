@@ -9,3 +9,7 @@ bool Queen::isValidMove(Tile *destination) {
     return false;
 }
 
+Queen::Queen(Tile *tile, Team team) : Piece(tile, team) {
+    symbol = 'Q';
+}
+
