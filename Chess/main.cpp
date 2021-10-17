@@ -8,10 +8,10 @@ int main() {
 
 
     Board* board = Board::getInstance();
-    Piece* rook = new Rook(board->getTile(0,0), white);
-   // Piece* rook2 = new Rook(git)
+    Piece* rook = new Rook(board->getTile(0,7), white);
+    //Piece* rook2 = new Rook(board->getTile(0,7), white);
     std::cout << board->toString() << std::endl;
-    rook->move(board->getTile(0,7));
+    rook->move(board->getTile(0,0));
     std::cout << board->toString() << std::endl;
 
 
