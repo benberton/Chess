@@ -3,8 +3,6 @@
 //
 
 //TODO: In order of importance
-//Fix kings check and mate to temp remove itself from the board
-//Check if move will put king in check
 //En passant
 //Check that promoting doesnt force stalemate
 //Promoting resets movecount//maybe change

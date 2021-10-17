@@ -20,6 +20,8 @@ public:
     int getWidth() const;
     void setPieces();
 
+    King* getKing(Team team);
+
 private:
     Board(int width);
     static Board* inst_;
@@ -27,6 +29,9 @@ private:
     int width;
     //Helper function for toString
     char intToChar(int val);
+
+    King* kw;
+    King* kb;
 
 
 };

@@ -5,6 +5,8 @@
 #include "Rook.h"
 
 bool Rook::isValidMove(Tile *destination) {
+    if(isPinned())
+        return false;
     if(destination->getX() == tile->getX() or destination->getY() ==tile->getY())
     {
         Piece* otherPiece = destination->getPiece();

@@ -35,6 +35,9 @@ public:
 
 
 protected:
+
+    bool isPinned();
+
     int moveCount;
     char symbol;
     Tile* tile;

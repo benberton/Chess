@@ -2,7 +2,7 @@
 // Created by Nathan Mautz on 10/16/21.
 //
 #include "Piece.h"
-
+#include "King.h"
 
 
 Piece::Piece(Tile *tile, Team team) : tile(tile), team(team) {
@@ -74,5 +74,23 @@ bool Piece::canPlay() {
 
 Tile *Piece::getTile() {
     return tile;
+}
+
+bool Piece::isPinned() {
+
+    bool isPinned = false;
+    tile->setPiece(nullptr);
+
+    Board* board = Board::getInstance();
+    King* king = board->getKing(team);
+
+    if(king->isInCheck())
+    {
+        isPinned = true;
+    }
+
+    tile->setPiece(this);
+
+    return isPinned;
 }
 

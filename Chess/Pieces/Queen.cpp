@@ -5,6 +5,8 @@
 #include "Queen.h"
 
 bool Queen::isValidMove(Tile *destination) {
+    if(isPinned())
+        return false;
     //Check destination
     if(destination->hasPiece())
     {

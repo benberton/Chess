@@ -7,6 +7,8 @@
 
 
 bool Pawn::isValidMove(Tile *destination) {
+    if(isPinned())
+        return false;
     int direction = 1;
     if(team == white)
         direction = -1;

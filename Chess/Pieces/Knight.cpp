@@ -6,6 +6,8 @@
 
 bool Knight::isValidMove(Tile *destination) {
 
+    if(isPinned())
+        return false;
     if(destination->hasPiece())
     {
         Piece* p = destination->getPiece();

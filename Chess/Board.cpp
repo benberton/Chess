@@ -104,6 +104,7 @@ void Board::setPieces() {
     tiles[2][0]->setPiece(new Bishop( tiles[2][0], white));
     tiles[5][0]->setPiece(new Bishop(tiles[5][0], white));
     tiles[4][0]->setPiece(new King(tiles[4][0], white));
+    kw = tiles[4][0];
     tiles[3][0]->setPiece(new Queen( tiles[3][0], white));
 
 
@@ -122,10 +123,17 @@ void Board::setPieces() {
     tiles[2][7]->setPiece(new Bishop(tiles[2][7], black));
     tiles[5][7]->setPiece(new Bishop( tiles[5][7], black));
     tiles[4][7]->setPiece(new King( tiles[4][7], black));
+    kb = tiles[4][7];
     tiles[3][7]->setPiece(new Queen(tiles[3][7], black));
 
 }
 
 int Board::getWidth() const {
     return width;
+}
+
+King *Board::getKing(Team team) {
+    if(team == white)
+        return kw;
+    return kb;
 }
