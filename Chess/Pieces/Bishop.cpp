@@ -14,6 +14,7 @@ bool Bishop::isValidMove(Tile *destination) {
         {
             return false;
         }
+
     }
 
 
