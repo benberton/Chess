@@ -6,6 +6,9 @@
 #define CHESS_BOARD_H
 #include <iostream>
 #include "Tile.h"
+#include <windows.h>
+#include "Pieces/Piece.h"
+using namespace std;
 
 
 class Tile;
@@ -17,6 +20,7 @@ public:
 
     Tile* getTile(int x, int y);
     std::string toString();
+    void printBoard(void);
 
     int getWidth() const;
     void setPieces();

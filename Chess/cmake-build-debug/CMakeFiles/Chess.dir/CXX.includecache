@@ -6,11 +6,31 @@
 
 #IncludeRegexTransform: 
 
+/Users/nathanmautz/Documents/Chess/Board.cpp
+Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+Pieces/Pawn.h
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
+Pieces/Rook.h
+/Users/nathanmautz/Documents/Chess/Pieces/Rook.h
+Pieces/Knight.h
+/Users/nathanmautz/Documents/Chess/Pieces/Knight.h
+Pieces/Bishop.h
+/Users/nathanmautz/Documents/Chess/Pieces/Bishop.h
+Pieces/King.h
+/Users/nathanmautz/Documents/Chess/Pieces/King.h
+Pieces/Queen.h
+/Users/nathanmautz/Documents/Chess/Pieces/Queen.h
+
 /Users/nathanmautz/Documents/Chess/Board.h
 iostream
 -
 Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
+windows.h
+-
+Pieces/Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 
 /Users/nathanmautz/Documents/Chess/Game.cpp
 Game.h
@@ -22,7 +42,43 @@ Board.h
 Pieces/King.h
 /Users/nathanmautz/Documents/Chess/Pieces/King.h
 
+/Users/nathanmautz/Documents/Chess/Pieces/Bishop.cpp
+Bishop.h
+/Users/nathanmautz/Documents/Chess/Pieces/Bishop.h
+../Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Bishop.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/King.cpp
+King.h
 /Users/nathanmautz/Documents/Chess/Pieces/King.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/King.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Knight.cpp
+Knight.h
+/Users/nathanmautz/Documents/Chess/Pieces/Knight.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Knight.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.cpp
+Pawn.h
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+../Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.cpp
 Piece.h
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 
@@ -32,7 +88,31 @@ Piece.h
 ../Board.h
 /Users/nathanmautz/Documents/Chess/Board.h
 
+/Users/nathanmautz/Documents/Chess/Pieces/Queen.cpp
+Queen.h
+/Users/nathanmautz/Documents/Chess/Pieces/Queen.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Queen.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Rook.cpp
+Rook.h
+/Users/nathanmautz/Documents/Chess/Pieces/Rook.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Rook.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Tile.cpp
+Tile.h
+/Users/nathanmautz/Documents/Chess/Tile.h
+
 /Users/nathanmautz/Documents/Chess/Tile.h
 Pieces/Piece.h
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/main.cpp
+Game.h
+/Users/nathanmautz/Documents/Chess/Game.h
 
