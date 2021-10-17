@@ -23,7 +23,7 @@ void Tile::setPiece(Piece *piece) {
 char Tile::getSymbol() {
     if(piece == nullptr)
     {
-        return 'O';
+        return ' ';
     }else
     {
         return piece->getSymbol();
