@@ -9,3 +9,7 @@ bool King::isValidMove(Tile *destination) {
     return false;
 }
 
+King::King(Tile *tile, Team team) : Piece(tile, team) {
+    symbol = 'K';
+}
+

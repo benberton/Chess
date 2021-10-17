@@ -6,7 +6,11 @@
 #define CHESS_KING_H
 #include "Piece.h"
 
-class King :Piece{
+class King : public Piece{
+public:
+    King(Tile *tile, Team team);
+
+private:
     bool isValidMove(Tile *destination) override;
 
 };

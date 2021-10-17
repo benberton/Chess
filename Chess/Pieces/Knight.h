@@ -6,7 +6,11 @@
 #define CHESS_KNIGHT_H
 #include "Piece.h"
 
-class Knight :Piece{
+class Knight :public Piece{
+public:
+    Knight(Tile *tile, Team team);
+
+private:
     bool isValidMove(Tile *destination) override;
 
 };

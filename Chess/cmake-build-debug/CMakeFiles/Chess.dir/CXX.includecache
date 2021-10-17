@@ -12,15 +12,21 @@ iostream
 Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 
+/Users/nathanmautz/Documents/Chess/Pieces/Knight.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
+Piece.h
+/Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+../Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
 ../Tile.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 ../Board.h
 /Users/nathanmautz/Documents/Chess/Board.h
-
-/Users/nathanmautz/Documents/Chess/Pieces/Rook.cpp
-Rook.h
-/Users/nathanmautz/Documents/Chess/Pieces/Rook.h
 
 /Users/nathanmautz/Documents/Chess/Pieces/Rook.h
 Piece.h
@@ -29,4 +35,16 @@ Piece.h
 /Users/nathanmautz/Documents/Chess/Tile.h
 Pieces/Piece.h
 /Users/nathanmautz/Documents/Chess/Pieces/Piece.h
+
+/Users/nathanmautz/Documents/Chess/main.cpp
+iostream
+-
+Board.h
+/Users/nathanmautz/Documents/Chess/Board.h
+Pieces/Pawn.h
+/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h
+Pieces/Rook.h
+/Users/nathanmautz/Documents/Chess/Pieces/Rook.h
+Pieces/Knight.h
+/Users/nathanmautz/Documents/Chess/Pieces/Knight.h
 
