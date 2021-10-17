@@ -12,14 +12,11 @@ int main() {
 
 
     Board* board = Board::getInstance();
-    Piece* p1 = new Queen(board->getTile(0,0), white);
-    Piece* p2 = new Rook(board->getTile(5, 5), black);
-    std::cout << board->toString() << std::endl;
-    p1->move(board->getTile(6,6));
+    King* p1 = new King(board->getTile(0,0), white);
+    //Piece* p2 = new Rook(board->getTile(1, 6), black);
+    Piece* p3 = new Rook(board->getTile(0, 6), black);
 
-
-
-    std::cout << board->toString() << std::endl;
+    std::cout << "Is mate = " << p1->isMate() << std::endl;
 
 
 

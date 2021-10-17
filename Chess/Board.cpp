@@ -32,7 +32,12 @@ std::string Board::toString() {
 }
 
 Tile* Board::getTile(int x, int y) {
-    return tiles[x][y];
+    if((x >= 0 and x < width) and (y >= 0 and y < width) )
+    {
+        return tiles[x][y];
+    }
+    return nullptr;
+
 }
 
 Board::Board(int width) {

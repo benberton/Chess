@@ -58,8 +58,12 @@ bool King::canMove() {
 
     for(int i = 0; i < 8; ++i)
     {
-        if(!isCheckedAt(tiles[i]))
-            return true;
+        if(tiles[i] != nullptr)
+        {
+            if(!isCheckedAt(tiles[i]))
+                return true;
+        }
+
     }
     return false;
 
