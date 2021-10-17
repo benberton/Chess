@@ -29,7 +29,6 @@ private:
     char intToChar(int val);
     void setPieces();
 
-
 };
 
 
