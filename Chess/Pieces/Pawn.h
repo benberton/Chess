@@ -21,6 +21,8 @@ public:
 private:
 
     bool isValidMove(Tile *destination) override;
+    bool enPassantCheck(Tile *destination);
+    int firstMovedTurnNum;
 };
 
 

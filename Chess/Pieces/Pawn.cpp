@@ -50,6 +50,7 @@ bool Pawn::isValidMove(Tile *destination) {
 
 Pawn::Pawn(Tile *tile, Team team) : Piece(tile, team) {
     symbol = 'P';
+    firstMovedTurnNum = 0;
 }
 
 void Pawn::move(Tile *destination) {
@@ -59,6 +60,10 @@ void Pawn::move(Tile *destination) {
     //Promotes if needed
     if(isValidMove(destination))
     {
+        if(firstMovedTurnNum == 0)
+        {
+            firstMovedTurnNum = Game::getInstance()->getTurnNum();
+        }
         Piece::move(destination);
         if((team == white and destY == 7) or (team == black and destY == 0))
         {
@@ -71,5 +76,36 @@ void Pawn::move(Tile *destination) {
 
 
     }
+}
+
+bool Pawn::enPassantCheck(Tile *destination) {
+    if(destination->hasPiece())
+        return false;
+
+    int dir = 1;
+    if(team == black)
+        dir -1;
+
+    int destX = destination->getX();
+    int destY = destination->getY();
+
+    Tile* tile = Board::getInstance()->getTile(destX, destY+dir);
+
+    Pawn* otherPawn = dynamic_cast<Pawn*>(tile->getPiece());
+    if(otherPawn == nullptr)
+        return false;
+
+    if(otherPawn->getMoveCount() != 1 or tile->getY() != 3 or tile->getY() != 4)
+        return false;
+
+    if(firstMovedTurnNum != Game::getInstance()->getTurnNum()-1)
+    {
+        return false;
+    }
+    if(((this->tile->getX() != tile->getX()+1 ) and (this->tile->getX() != tile->getX()+1)) or this->tile->getY() != tile->getY())
+        return false;
+    return true;
+
+
 }
 

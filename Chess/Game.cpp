@@ -111,6 +111,7 @@ void Game::tryMovePiece(string start, string stop, Team team) {
 
     }else{
         p->move(board->getTile(endingX,endingY));
+        ++turnNum;
     }
 
 }
@@ -207,6 +208,10 @@ char Game::getPromoteInput() {
     return c;
 
 
+}
+
+int Game::getTurnNum() const {
+    return turnNum;
 }
 
 

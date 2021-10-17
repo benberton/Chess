@@ -5,9 +5,9 @@
 #include "Pieces/Pawn.h"
 
 int main() {
-    Game* game = Game::getInstance();
+    //Game* game = Game::getInstance();
     //game->play();
-
+    //delete game;
 
 
     Board* b = Board::getInstance();
@@ -15,9 +15,8 @@ int main() {
     t->setPiece(new Pawn(t, white));
     b->getTile(0,7)->setPiece(nullptr);
 
-    game->play();
 
-    delete game;
+
 
     return 0;
 }

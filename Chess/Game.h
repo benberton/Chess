@@ -4,7 +4,6 @@
 
 //TODO: In order of importance
 //En passant
-//Check that promoting doesnt force stalemate
 //Promoting resets movecount//maybe change
 
 
@@ -28,7 +27,7 @@ public:
     void play();
     Piece* promotePawn(Piece* pawn);
 
-
+    int getTurnNum() const;
 
 
 private:
@@ -41,6 +40,7 @@ private:
 
     int letterConversion(char value);
     int numberConversion(char value);
+    int turnNum;
 
 
     static Game* inst_;

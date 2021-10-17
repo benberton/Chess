@@ -28,6 +28,8 @@ public:
     bool canPlay();
     Tile* getTile();
 
+    int getMoveCount() const;
+
 
     virtual bool isValidMove(Tile *destination) = 0;
     virtual void move(Tile *destination);

@@ -94,3 +94,7 @@ bool Piece::isPinned() {
     return isPinned;
 }
 
+int Piece::getMoveCount() const {
+    return moveCount;
+}
+
