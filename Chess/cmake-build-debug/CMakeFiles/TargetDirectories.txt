@@ -1,3 +1,3 @@
-/Users/nathanmautz/Documents/Chess/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/nathanmautz/Documents/Chess/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/nathanmautz/Documents/Chess/cmake-build-debug/CMakeFiles/Chess.dir
+C:/Hackathon/Chess/Chess/cmake-build-debug/CMakeFiles/Chess.dir
+C:/Hackathon/Chess/Chess/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Hackathon/Chess/Chess/cmake-build-debug/CMakeFiles/rebuild_cache.dir

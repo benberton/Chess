@@ -8,7 +8,7 @@
 
 #include "Board.h"
 #include "Pieces/King.h"
-
+using namespace std;
 class Game{
 public:
     Game();
@@ -18,8 +18,10 @@ public:
 private:
 
     void playTurn(Team team);
-    void tryMovePiece(std::string str, Team team);
+    void tryMovePiece(string start, string stop, Team team);
     bool canPlay(Team team);
+    int letterConversion(char value);
+    int numberConversion(char value);
 
 
     Board* board;

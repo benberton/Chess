@@ -8,142 +8,142 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/nathanmautz/Documents/Chess/cmake-build-debug"/>
+				<Option working_dir="C:/Hackathon/Chess/Chess/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/nathanmautz/Documents/Chess/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/nathanmautz/Documents/Chess/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Chess">
-				<Option output="/Users/nathanmautz/Documents/Chess/cmake-build-debug/Chess" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/nathanmautz/Documents/Chess/cmake-build-debug"/>
+				<Option output="C:/Hackathon/Chess/Chess/cmake-build-debug/Chess.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Hackathon/Chess/Chess/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 Chess"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 Chess"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Chess/fast">
-				<Option output="/Users/nathanmautz/Documents/Chess/cmake-build-debug/Chess" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/nathanmautz/Documents/Chess/cmake-build-debug"/>
+				<Option output="C:/Hackathon/Chess/Chess/cmake-build-debug/Chess.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Hackathon/Chess/Chess/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 Chess/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nathanmautz/Documents/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 Chess/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Hackathon/Chess/Chess/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Hackathon/Chess/Chess/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Hackathon/Chess/Chess/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Board.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Board.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Board.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Game.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Game.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Game.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Game.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Bishop.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Bishop.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Bishop.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Bishop.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/King.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/King.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/King.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/King.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Knight.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Knight.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Knight.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Knight.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Pawn.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Pawn.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Pawn.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Pawn.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Piece.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Piece.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Piece.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Piece.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Queen.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Queen.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Queen.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Queen.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Rook.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Rook.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Pieces/Rook.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Pieces/Rook.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Tile.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/Tile.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/Tile.h">
+		<Unit filename="C:/Hackathon/Chess/Chess/Tile.h">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/main.cpp">
+		<Unit filename="C:/Hackathon/Chess/Chess/main.cpp">
 			<Option target="Chess"/>
 		</Unit>
-		<Unit filename="/Users/nathanmautz/Documents/Chess/CMakeLists.txt">
+		<Unit filename="C:/Hackathon/Chess/Chess/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
